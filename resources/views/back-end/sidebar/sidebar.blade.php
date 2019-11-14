@@ -101,9 +101,33 @@
                             </a>
                         </li>
                         <li class="nav-item">
+                            <a href="{{ route('about-me') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>About me</p>
+                            </a>
+                        </li>
+
+                    </ul>
+                </li>
+                <li class="nav-item has-treeview">
+                    <a href="#" class="nav-link">
+                        <i class="nav-icon fas fa-table"></i>
+                        <p>
+                            Users
+                            <i class="fas fa-angle-left right"></i>
+                        </p>
+                    </a>
+                    <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                            <a href="{{ route('author-info') }}" class="nav-link">
+                                <i class="far fa-circle nav-icon"></i>
+                                <p>Author</p>
+                            </a>
+                        </li>
+                        <li class="nav-item">
                             <a href="{{ route('manage-gallery') }}" class="nav-link">
                                 <i class="far fa-circle nav-icon"></i>
-                                <p>Collection</p>
+                                <p>Manage Author</p>
                             </a>
                         </li>
 

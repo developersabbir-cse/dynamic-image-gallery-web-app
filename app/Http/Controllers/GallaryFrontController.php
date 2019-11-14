@@ -1,6 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
+use App\Author;
 use App\Gallery;
 use App\Home;
 use Illuminate\Http\Request;
@@ -9,7 +10,7 @@ class GallaryFrontController extends Controller
 {
     public function home(){
         return view('front-end.home.home',[
-            'homes' =>Home::find(4)
+            'homes'     =>Home::find(4)
         ]);
     }
     public function collection(){

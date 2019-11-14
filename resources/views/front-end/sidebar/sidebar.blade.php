@@ -1,5 +1,5 @@
 <aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
-    <h1 id="colorlib-logo"><a href="index.html"><span class="img" style="background-image: url(images/author.jpg);"></span>Louie Smith</a></h1>
+    <h1 id="colorlib-logo"><a href="index.html"><span class="img" style="background-image: url({{ asset($author->author_image) }});"></span>{{ $author->author_name }}</a></h1>
     <nav id="colorlib-main-menu" role="navigation">
         <ul>
             <li class="colorlib-active"><a href="{{ route('/') }}">Home</a></li>

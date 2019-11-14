@@ -70,3 +70,15 @@ Route::post('update-home',[
     'uses'  =>'PageController@updateHome',
     'as'    =>'update-home'
 ]);
+Route::get('author-info',[
+    'uses'  =>'PageController@authorInfo',
+    'as'    =>'author-info'
+]);
+Route::post('new-author',[
+    'uses'  =>'PageController@newAuthor',
+    'as'    =>'new-author'
+]);
+Route::get('about-me',[
+    'uses'  =>'PageController@aboutMe',
+    'as'    =>'about-me'
+]);
