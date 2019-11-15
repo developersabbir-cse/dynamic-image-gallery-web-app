@@ -19,9 +19,6 @@
                     </section>
                 </div>
                 <div class="author-info text p-3 p-md-5">
-                    @foreach($homes as $home)
-
-                    @endforeach
                     <div class="desc">
 
                         <span class="subheading">Hello! I'm</span>
@@ -49,41 +46,15 @@
                 </div>
             </div>
             <div class="row no-gutters">
+                @foreach($galleries as $gallery)
                 <div class="col-sm-12 col-md ftco-animate">
-                    <a href="images/image_1.jpg" class="insta-img image-popup" style="background-image: url({{ asset('/') }}front-end/images/image_1.jpg);">
+                    <a href="{{ asset($gallery->gallery_image) }}" class="insta-img image-popup" style="background-image: url({{ asset($gallery->gallery_image) }});">
                         <div class="icon d-flex justify-content-center">
                             <span class="icon-instagram align-self-center"></span>
                         </div>
                     </a>
                 </div>
-                <div class="col-sm-12 col-md ftco-animate">
-                    <a href="images/image_2.jpg" class="insta-img image-popup" style="background-image: url({{ asset('/') }}front-end/images/image_2.jpg);">
-                        <div class="icon d-flex justify-content-center">
-                            <span class="icon-instagram align-self-center"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md ftco-animate">
-                    <a href="images/image_3.jpg" class="insta-img image-popup" style="background-image: url({{ asset('/') }}front-end/images/image_3.jpg);">
-                        <div class="icon d-flex justify-content-center">
-                            <span class="icon-instagram align-self-center"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md ftco-animate">
-                    <a href="images/image_4.jpg" class="insta-img image-popup" style="background-image: url({{ asset('/') }}front-end/images/image_4.jpg);">
-                        <div class="icon d-flex justify-content-center">
-                            <span class="icon-instagram align-self-center"></span>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md ftco-animate">
-                    <a href="images/image_5.jpg" class="insta-img image-popup" style="background-image: url({{ asset('/') }}front-end/images/image_5.jpg);">
-                        <div class="icon d-flex justify-content-center">
-                            <span class="icon-instagram align-self-center"></span>
-                        </div>
-                    </a>
-                </div>
+                    @endforeach
             </div>
         </div>
     </section>

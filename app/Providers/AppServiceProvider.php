@@ -18,7 +18,7 @@ class AppServiceProvider extends ServiceProvider
         View::composer('*',function($view){
             $view->author=Author::find(1);
         });
-        View::composer('front-end.footer.footer',function($view){
+        View::composer('front-end.*',function($view){
             $view->galleries=Gallery::where('publication_status',1)->orderBy('id','desc')->get();
         });
     }

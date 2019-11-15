@@ -7677,13 +7677,13 @@ h1, h2, h3, h4, h5,
       -ms-border-radius: 50%;
       border-radius: 50%; }
     .hero-wrap .text .subheading {
-      font-size: 24px;
-      color: #bfbfbf;
+      font-size: 29px;
+      color:#5e6659;
       font-weight: 400; }
     .hero-wrap .text h1 {
       letter-spacing: 1px;
       font-weight: 900;
-      color: #ccb78f; }
+      color: #c88a14; }
       .hero-wrap .text h1 span {
         color: #000000; }
       @media (max-width: 991.98px) {

@@ -82,3 +82,11 @@ Route::get('about-me',[
     'uses'  =>'PageController@aboutMe',
     'as'    =>'about-me'
 ]);
+Route::post('update-about',[
+'uses'  =>'PageController@updateAbout',
+'as'    =>'update-about'
+]);
+Route::get('about',[
+    'uses'  =>'GallaryFrontController@aboutMe',
+    'as'    =>'about'
+]);

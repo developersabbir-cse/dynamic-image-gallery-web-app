@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers;
-
+use App\About;
 use App\Author;
 use App\Home;
 use Illuminate\Http\Request;
@@ -27,6 +27,12 @@ class PageController extends Controller
         return redirect('author-info')->with('message','Author Updated successfully');
     }
     public function aboutMe(){
-        return view('back-end.pages.about-me');
+        return view('back-end.pages.about-me',[
+            'about' =>About::find(1)
+        ]);
+    }
+    public function updateAbout(Request $request){
+        About::updateAboutInfo($request);
+        return redirect('about-me')->with('message','About info successfully updated');
     }
 }

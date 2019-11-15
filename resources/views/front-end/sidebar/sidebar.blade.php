@@ -4,7 +4,7 @@
         <ul>
             <li class="colorlib-active"><a href="{{ route('/') }}">Home</a></li>
             <li><a href="{{ route('collection') }}">Collection</a></li>
-            <li><a href="about.html">About Me</a></li>
+        <li><a href="{{ route("about") }}">About Me</a></li>
             <li><a href="services.html">My Services</a></li>
             <li><a href="blog.html">Blog</a></li>
             <li><a href="contact.html">Contact</a></li>

@@ -1,6 +1,8 @@
 <?php
 
 namespace App\Http\Controllers;
+
+use App\About;
 use App\Author;
 use App\Gallery;
 use App\Home;
@@ -16,6 +18,11 @@ class GallaryFrontController extends Controller
     public function collection(){
         return view('front-end.collection.collection',[
             'images'    =>Gallery::where('publication_status',1)->get()
+        ]);
+    }
+    public function aboutMe(){
+        return view('front-end.about.about',[
+            'about'     =>About::find(1)
         ]);
     }
 }
